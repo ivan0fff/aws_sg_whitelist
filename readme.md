@@ -33,8 +33,8 @@ This script allows you to modify the whitelist of an AWS security group by addin
     profile = 'your-profile-name'
     ```
 
-2. **Set the Security Group Rule CidrIP Description PATTERN in existing Secuirities Groups**
-    Modify the `profile` variable in the script to match your AWS profile name:
+2. **Set the Security Group Rule CidrIp Description PATTERN in existing Secuirities Groups**
+    Modify the `PATTERN` variable in the script to match your sgr CidrIp that contains the desired PATTERN:
     ```python
     profile = 'your-profile-name'
     ```
