@@ -23,6 +23,7 @@ This script allows you to modify the whitelist of an AWS security group by addin
     ```sh
     aws configure sso
     ```
+    Follow the instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) to configure the AWS SSO.
 
 ## Usage
 
@@ -32,12 +33,18 @@ This script allows you to modify the whitelist of an AWS security group by addin
     profile = 'your-profile-name'
     ```
 
-2. **Run the script**:
-    ```sh
-    python aws3.py
+2. **Set the Security Group Rule CidrIP Description PATTERN in existing Secuirities Groups**
+    Modify the `profile` variable in the script to match your AWS profile name:
+    ```python
+    profile = 'your-profile-name'
     ```
 
-3. **Follow the prompts**:
+3. **Run the script**:
+    ```sh
+    python aws_sg_ip_whitelist.py
+    ```
+
+4. **Follow the prompts**:
     The script will prompt you to confirm the whitelist modification. Respond with `yes` or `no`.
 
 ## Error Handling
